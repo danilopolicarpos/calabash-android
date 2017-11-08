@@ -1,6 +1,25 @@
-start_
 start_test_server_in_background
 query"*"
-query("* id:'movie'").size 
-query("* id:'movie'").size == 1 
+query"*", id
+query"*, id"
+query"*, :id"
+query"*"
+query"button"
+id
+:id
+query "*, :ids"
+query "*, :text"
+query "*, :contentDescription"
+query "*",id
+query"*" :id
+query("*", id)
+query"*"
+query"android.view.View"
+query"android.view.View"[0]
+query"*",:class
+query"*",:id
+query"*",:text
+query"*",:contDesc
+query"*"
+query"*",:contentDescription
 exit
