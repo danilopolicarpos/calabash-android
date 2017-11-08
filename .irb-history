@@ -1,0 +1,6 @@
+start_
+start_test_server_in_background
+query"*"
+query("* id:'movie'").size 
+query("* id:'movie'").size == 1 
+exit
