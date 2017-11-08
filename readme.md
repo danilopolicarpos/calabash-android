@@ -34,7 +34,7 @@ bundle install
 Para começar com o calabash na pasta atual digito o comando:
 ```
 calabash-android gen  # cria o esqueleto do projeto
-```
+
 features
 |_support
 | |_app_installation_hooks.rb
@@ -46,7 +46,7 @@ features
 |_my_first.feature
 |_Gemfile
 |_Gemfile.lock
-
+```
 ## Assinar o apk
 
 Há duas formas para assinar o apk:
@@ -83,7 +83,7 @@ bundle exec calabash-android run app-debug.apk
 
 Para executar os testes passando uma feature desejada:
 ```
- bundle exec calabash-android run app-debug.apk features/nome da feature
+bundle exec calabash-android run app-debug.apk features/nome da feature
 ```
 
 
