@@ -1,6 +1,6 @@
 #  Calabash-android x Appium android
 
-## Quem tem a melhor performance em execução ?
+## Quem tem a melhor Performance em Execução ?
 
 Ao invés de falar melhor mostrar, esse projeto tem como objetivo 
 criar um repositorio com calabash android e nesse <a href="https://github.com/danilopolicarpos/Appium-android">Appium Android</a>
@@ -9,6 +9,7 @@ para medir-mos a performance dos dois.
 ## Criando o projeto
 
     Na pasta do projeto digito o comando:
+
 ```
 bundle init         # cria o arquivo GEMFILE
 ```
@@ -16,8 +17,9 @@ bundle init         # cria o arquivo GEMFILE
 ## Gemfile
 
 Abra o arquivo Gemfile e adicione as gems:
-source "https://rubygems.org"
 ```
+source "https://rubygems.org"
+
 # gem "rails"
 gem 'calabash-common', '~> 0.0.2'
 gem 'calabash-android', '~> 0.9.0'
@@ -93,7 +95,7 @@ bundle exec calabash-android run app-debug.apk features/nome da feature
 
 Respondendo então pergunta do tópico. "Até o momento a execução dos testes
 com o calabash android é bem mais rápida do que o appium android".Se ficou 
-curiosa é só olhar o "reports" nos repositorios e verificar o time.
+curioso é só olhar o "reports" nos repositorios e verificar o time.
 
 
 
