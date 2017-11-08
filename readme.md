@@ -4,6 +4,7 @@
 
 Ao invés de falar melhor mostrar, esse projeto tem como objetivo 
 criar um repositorio com calabash android e nesse "appium android"
+para medir-mos a performance dos dois.
 
 ## Criando o projeto
 
@@ -44,6 +45,7 @@ features
 |_step_definitions
 | |_calabash_steps.rb
 |_my_first.feature
+|_app-debug.apk
 |_Gemfile
 |_Gemfile.lock
 ```
@@ -87,6 +89,11 @@ bundle exec calabash-android run app-debug.apk features/nome da feature
 ```
 
 
+## Respostas
+
+Respondendo então pergunta do tópico. "Até o momento a execução dos testes
+com o calabash android é bem mais rápida do que o appium android".Se ficou 
+curiosa é só olhar o "reports" nos repositorios e verificar o time.
 
 
 
