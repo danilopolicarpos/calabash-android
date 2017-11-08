@@ -1,25 +1,16 @@
-start_test_server_in_background
-query"*"
-query"*", id
-query"*, id"
-query"*, :id"
-query"*"
-query"button"
-id
-:id
-query "*, :ids"
-query "*, :text"
-query "*, :contentDescription"
-query "*",id
-query"*" :id
-query("*", id)
 query"*"
 query"android.view.View"
-query"android.view.View"[0]
-query"*",:class
-query"*",:id
-query"*",:text
-query"*",:contDesc
-query"*"
-query"*",:contentDescription
-exit
+query"android.view.View",:class
+query"android.view.View"
+query"class: 'android.view.View'"
+query"android.view.View"
+query("android.view.View")
+query("android.view.View")[3]
+query("android.view.View").size
+query("android.support.v7.widget.FitWindowsLinearLayout")
+query("* id:'action_bar_root'")
+query("* id:'action_bar_root'").size
+query("* id:'action_bar_root'").empty
+query("* id:'action_bar_root'").empty?
+query("* id:'action_bar_root'")[0]
+query("* id:'action_bar_root'").empty?

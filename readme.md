@@ -2,13 +2,13 @@
 
 ## Quem tem a melhor Performance em Execução ?
 
-Ao invés de falar melhor mostrar, esse projeto tem como objetivo 
+Ao invés de falar, melhor mostrar, esse projeto tem como objetivo 
 criar um repositorio com calabash android e nesse <a href="https://github.com/danilopolicarpos/Appium-android">Appium Android</a>
 para medir-mos a performance dos dois.
 
 ## Criando o projeto
 
-    Na pasta do projeto digito o comando:
+Na pasta do projeto digito o comando:
 
 ```
 bundle init         # cria o arquivo GEMFILE
@@ -27,7 +27,7 @@ gem 'calabash-cucumber', '~> 0.20.5'
 gem 'pry'
 ```
 
-Abra o terminal e execute os comandos abaixo :
+Abra o terminal e execute o comando abaixo :
 ```
 bundle install      
 ```
@@ -47,7 +47,6 @@ features
 |_step_definitions
 | |_calabash_steps.rb
 |_my_first.feature
-|_app-debug.apk
 |_Gemfile
 |_Gemfile.lock
 ```
@@ -77,6 +76,13 @@ query"*",:class                         # exibe elementos tipo class na tela
 query"*",:id                            # exibe elementos tipo id na tela
 query"*",:text                          # exibe elementos tipo text na tela
 query"*",:contentDescription            # exibe elementos tipo contDesc na tela
+query("android.view.View")              # busca por classe especifica na tela
+query("* id:'action_bar_root'")         # busca por id especifico na tela
+query("* text:'Buscar'")                # busca por text especifico na tela
+query("* contentDescription:'oi'")      # busca por contDesc na tela
+query("* id:'action_bar_root'")[0]      # busca elemento por index
+query("* id:'action_bar_root'").empty?  # retorna true ou false o elemento
+query("* id:'action_bar_root'").size    # verifica o tamanho 
 ```
 ## Executando os testes
 
