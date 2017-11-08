@@ -86,7 +86,7 @@ query("* id:'action_bar_root'").size    # verifica o tamanho
 ```
 ## Executando os testes
 
-Para executar os testes para basta digitar os comandos abaixo:
+Para executar os testes basta digitar os comandos abaixo:
 ```
 bundle exec calabash-android run app-debug.apk
 ```
@@ -96,7 +96,13 @@ Para executar os testes passando uma feature desejada:
 bundle exec calabash-android run app-debug.apk features/nome da feature
 ```
 
+## Gerando relatório de teste
 
+Para gerar o relatório no final dos teste, basta colocar o comando:
+
+```
+bundle exec calabash-android run app-debug.apk --format html --out reports.html
+```
 ## Respostas
 
 Respondendo então pergunta do tópico. "Até o momento a execução dos testes
